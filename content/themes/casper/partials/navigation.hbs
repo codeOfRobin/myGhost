@@ -1,13 +1,14 @@
-<div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
+<nav class="paradeiser" id="paradeiser">
+    <a href="#">
+        <img src="http://danielwinter.at/apple-touch-icon_76x76.png" alt="Logo of Daniel Winter" class="paradeiser_logo">
     </a>
-    <ul>
-        {{#foreach navigation}}
-            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
-        {{/foreach}}
-    </ul>
-    <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
-</div>
-<span class="nav-cover"></span>
+    <a href="#">
+        <b>Home</b>
+    </a>
+    <a href="#">
+        <b>Contact</b>
+    </a>
+    <a href="#">
+        <b>Blog</b>
+    </a>
+</nav>

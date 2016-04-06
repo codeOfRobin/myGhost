@@ -16,8 +16,9 @@
 
     {{! Styles'n'Scripts }}
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <!-- <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:700' rel='stylesheet' type='text/css'> -->
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paradeiser/0.4.2/min/paradeiser.min.css">
+
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
     {{! Ghost outputs important style and meta data with this tag }}
@@ -47,6 +48,16 @@
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
+    <script>
+        // enabling headroom
+        var myElement = document.querySelector(".paradeiser");
+        var headroom  = new Headroom(myElement, {
+            tolerance : 5
+        });
+        headroom.init();
+    </script>
 
 </body>
 </html>
