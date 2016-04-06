@@ -1,0 +1,14 @@
+.paradeiser .paradeiser_dropdown, .paradeiser a {
+    font-size: 20px;
+    font-family: 'Lato';
+    background:#f5f8fa;
+    color: rgba(80, 80, 80, 1);
+}
+.paradeiser a:hover
+{
+    color: black
+}
+.post-header h1
+{
+    font-size: 6rem;
+}
