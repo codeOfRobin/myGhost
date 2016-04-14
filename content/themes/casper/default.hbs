@@ -55,6 +55,10 @@ mixpanel.init("71be81c6798c82a9772ad397768bd0d6");</script><!-- end Mixpanel -->
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
     <script>
+    mixpanel.track('page viewed', {
+        'page name' : document.title,
+        'url' : window.location.pathname
+    });
         // enabling headroom
         var myElement = document.querySelector(".paradeiser");
         var headroom  = new Headroom(myElement, {
